@@ -1,0 +1,888 @@
+[
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "load_iris",
+        "importPath": "sklearn.datasets",
+        "description": "sklearn.datasets",
+        "isExtraImport": true,
+        "detail": "sklearn.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "load_iris",
+        "importPath": "sklearn.datasets",
+        "description": "sklearn.datasets",
+        "isExtraImport": true,
+        "detail": "sklearn.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "load_iris",
+        "importPath": "sklearn.datasets",
+        "description": "sklearn.datasets",
+        "isExtraImport": true,
+        "detail": "sklearn.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "load_iris",
+        "importPath": "sklearn.datasets",
+        "description": "sklearn.datasets",
+        "isExtraImport": true,
+        "detail": "sklearn.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "load_iris",
+        "importPath": "sklearn.datasets",
+        "description": "sklearn.datasets",
+        "isExtraImport": true,
+        "detail": "sklearn.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "load_iris",
+        "importPath": "sklearn.datasets",
+        "description": "sklearn.datasets",
+        "isExtraImport": true,
+        "detail": "sklearn.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "PriorityQueue",
+        "importPath": "queue",
+        "description": "queue",
+        "isExtraImport": true,
+        "detail": "queue",
+        "documentation": {}
+    },
+    {
+        "label": "PriorityQueue",
+        "importPath": "queue",
+        "description": "queue",
+        "isExtraImport": true,
+        "detail": "queue",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "dendrogram",
+        "importPath": "scipy.cluster.hierarchy",
+        "description": "scipy.cluster.hierarchy",
+        "isExtraImport": true,
+        "detail": "scipy.cluster.hierarchy",
+        "documentation": {}
+    },
+    {
+        "label": "linkage",
+        "importPath": "scipy.cluster.hierarchy",
+        "description": "scipy.cluster.hierarchy",
+        "isExtraImport": true,
+        "detail": "scipy.cluster.hierarchy",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "GaussianNB",
+        "importPath": "sklearn.naive_bayes",
+        "description": "sklearn.naive_bayes",
+        "isExtraImport": true,
+        "detail": "sklearn.naive_bayes",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "confusion_matrix",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "iris",
+        "kind": 5,
+        "importPath": "1.scatterplot",
+        "description": "1.scatterplot",
+        "peekOfCode": "iris = load_iris()\n# Convert dataset into DataFrame\ndf = pd.DataFrame(iris.data,columns=iris.feature_names)\n# Add target labels\ndf['Species'] = iris.target\n# Create scatter plot\nplt.figure(figsize=(8,6))\nplt.scatter(df['sepal length (cm)'],df['sepal width (cm)'],\n    c=df['Species'],      # Color points by species\n    cmap='viridis')",
+        "detail": "1.scatterplot",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "1.scatterplot",
+        "description": "1.scatterplot",
+        "peekOfCode": "df = pd.DataFrame(iris.data,columns=iris.feature_names)\n# Add target labels\ndf['Species'] = iris.target\n# Create scatter plot\nplt.figure(figsize=(8,6))\nplt.scatter(df['sepal length (cm)'],df['sepal width (cm)'],\n    c=df['Species'],      # Color points by species\n    cmap='viridis')\n# Add labels and title\nplt.xlabel(\"Sepal Length (cm)\")",
+        "detail": "1.scatterplot",
+        "documentation": {}
+    },
+    {
+        "label": "df['Species']",
+        "kind": 5,
+        "importPath": "1.scatterplot",
+        "description": "1.scatterplot",
+        "peekOfCode": "df['Species'] = iris.target\n# Create scatter plot\nplt.figure(figsize=(8,6))\nplt.scatter(df['sepal length (cm)'],df['sepal width (cm)'],\n    c=df['Species'],      # Color points by species\n    cmap='viridis')\n# Add labels and title\nplt.xlabel(\"Sepal Length (cm)\")\nplt.ylabel(\"Sepal Width (cm)\")\nplt.title(\"Scatter Plot of Iris Dataset\")",
+        "detail": "1.scatterplot",
+        "documentation": {}
+    },
+    {
+        "label": "alphabeta",
+        "kind": 2,
+        "importPath": "alpa-beta",
+        "description": "alpa-beta",
+        "peekOfCode": "def alphabeta(depth, node, isMax, values, max_depth, alpha, beta):\n    # Leaf node reached\n    if depth == max_depth:\n        return values[node]\n    if isMax:\n        best = float('-inf')\n        for i in range(2):\n            value = alphabeta(depth + 1,node * 2 + i,False,values,max_depth,alpha,beta)\n            best = max(best, value)\n            alpha = max(alpha, best)",
+        "detail": "alpa-beta",
+        "documentation": {}
+    },
+    {
+        "label": "tree_depth",
+        "kind": 5,
+        "importPath": "alpa-beta",
+        "description": "alpa-beta",
+        "peekOfCode": "tree_depth = int(input(\"Enter depth of tree: \"))\nleaf_nodes = 2 ** tree_depth\nprint(f\"Enter {leaf_nodes} leaf node values:\")\nvalues = list(map(int, input().split()))\nplayer = input(\"Enter starting player (MAX/MIN): \").upper()\nisMax = True if player == \"MAX\" else False\n# Function Call\nresult = alphabeta(0,0,isMax,values,tree_depth,float('-inf'),float('inf'))\nprint(\"Optimal Value =\", result)",
+        "detail": "alpa-beta",
+        "documentation": {}
+    },
+    {
+        "label": "leaf_nodes",
+        "kind": 5,
+        "importPath": "alpa-beta",
+        "description": "alpa-beta",
+        "peekOfCode": "leaf_nodes = 2 ** tree_depth\nprint(f\"Enter {leaf_nodes} leaf node values:\")\nvalues = list(map(int, input().split()))\nplayer = input(\"Enter starting player (MAX/MIN): \").upper()\nisMax = True if player == \"MAX\" else False\n# Function Call\nresult = alphabeta(0,0,isMax,values,tree_depth,float('-inf'),float('inf'))\nprint(\"Optimal Value =\", result)",
+        "detail": "alpa-beta",
+        "documentation": {}
+    },
+    {
+        "label": "values",
+        "kind": 5,
+        "importPath": "alpa-beta",
+        "description": "alpa-beta",
+        "peekOfCode": "values = list(map(int, input().split()))\nplayer = input(\"Enter starting player (MAX/MIN): \").upper()\nisMax = True if player == \"MAX\" else False\n# Function Call\nresult = alphabeta(0,0,isMax,values,tree_depth,float('-inf'),float('inf'))\nprint(\"Optimal Value =\", result)",
+        "detail": "alpa-beta",
+        "documentation": {}
+    },
+    {
+        "label": "player",
+        "kind": 5,
+        "importPath": "alpa-beta",
+        "description": "alpa-beta",
+        "peekOfCode": "player = input(\"Enter starting player (MAX/MIN): \").upper()\nisMax = True if player == \"MAX\" else False\n# Function Call\nresult = alphabeta(0,0,isMax,values,tree_depth,float('-inf'),float('inf'))\nprint(\"Optimal Value =\", result)",
+        "detail": "alpa-beta",
+        "documentation": {}
+    },
+    {
+        "label": "isMax",
+        "kind": 5,
+        "importPath": "alpa-beta",
+        "description": "alpa-beta",
+        "peekOfCode": "isMax = True if player == \"MAX\" else False\n# Function Call\nresult = alphabeta(0,0,isMax,values,tree_depth,float('-inf'),float('inf'))\nprint(\"Optimal Value =\", result)",
+        "detail": "alpa-beta",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "alpa-beta",
+        "description": "alpa-beta",
+        "peekOfCode": "result = alphabeta(0,0,isMax,values,tree_depth,float('-inf'),float('inf'))\nprint(\"Optimal Value =\", result)",
+        "detail": "alpa-beta",
+        "documentation": {}
+    },
+    {
+        "label": "a_star",
+        "kind": 2,
+        "importPath": "a_star",
+        "description": "a_star",
+        "peekOfCode": "def a_star(graph, heuristic, start, goal):\n    visited = set()\n    pq = PriorityQueue()\n    # (f(n), g(n), node)\n    pq.put((heuristic[start], 0, start))\n    while not pq.empty():\n        f, g, current = pq.get()\n        if current in visited:\n            continue\n        print(current, end=\" \")",
+        "detail": "a_star",
+        "documentation": {}
+    },
+    {
+        "label": "graph",
+        "kind": 5,
+        "importPath": "a_star",
+        "description": "a_star",
+        "peekOfCode": "graph = {}\nheuristic = {}\nn = int(input(\"Enter number of nodes: \"))\nfor i in range(n):\n    node = input(\"\\nEnter node: \")\n    heuristic[node] = int(input(\"Enter heuristic value: \") )\n    neighbors = int(input(\"Enter number of neighbors: \"))\n    graph[node] = []\n    for j in range(neighbors):\n        neighbor = input(\"Enter neighbor: \")",
+        "detail": "a_star",
+        "documentation": {}
+    },
+    {
+        "label": "heuristic",
+        "kind": 5,
+        "importPath": "a_star",
+        "description": "a_star",
+        "peekOfCode": "heuristic = {}\nn = int(input(\"Enter number of nodes: \"))\nfor i in range(n):\n    node = input(\"\\nEnter node: \")\n    heuristic[node] = int(input(\"Enter heuristic value: \") )\n    neighbors = int(input(\"Enter number of neighbors: \"))\n    graph[node] = []\n    for j in range(neighbors):\n        neighbor = input(\"Enter neighbor: \")\n        cost = int(input(\"Enter cost: \"))",
+        "detail": "a_star",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "a_star",
+        "description": "a_star",
+        "peekOfCode": "n = int(input(\"Enter number of nodes: \"))\nfor i in range(n):\n    node = input(\"\\nEnter node: \")\n    heuristic[node] = int(input(\"Enter heuristic value: \") )\n    neighbors = int(input(\"Enter number of neighbors: \"))\n    graph[node] = []\n    for j in range(neighbors):\n        neighbor = input(\"Enter neighbor: \")\n        cost = int(input(\"Enter cost: \"))\n        graph[node].append((neighbor, cost))",
+        "detail": "a_star",
+        "documentation": {}
+    },
+    {
+        "label": "start",
+        "kind": 5,
+        "importPath": "a_star",
+        "description": "a_star",
+        "peekOfCode": "start = input(\"\\nEnter start node: \")\ngoal = input(\"Enter goal node: \")\na_star(graph, heuristic, start, goal)",
+        "detail": "a_star",
+        "documentation": {}
+    },
+    {
+        "label": "goal",
+        "kind": 5,
+        "importPath": "a_star",
+        "description": "a_star",
+        "peekOfCode": "goal = input(\"Enter goal node: \")\na_star(graph, heuristic, start, goal)",
+        "detail": "a_star",
+        "documentation": {}
+    },
+    {
+        "label": "best_first_search",
+        "kind": 2,
+        "importPath": "bfs",
+        "description": "bfs",
+        "peekOfCode": "def best_first_search(graph, heuristic, start, goal):\n    visited = set()\n    pq = PriorityQueue()\n    pq.put((heuristic[start], start))\n    while not pq.empty():\n        h, current = pq.get()\n        if current in visited:\n            continue\n        print(current, end=\" \")\n        if current == goal:",
+        "detail": "bfs",
+        "documentation": {}
+    },
+    {
+        "label": "graph",
+        "kind": 5,
+        "importPath": "bfs",
+        "description": "bfs",
+        "peekOfCode": "graph = {}\nheuristic = {}\nn = int(input(\"Enter number of nodes: \"))\nfor i in range(n):\n    node = input(\"Enter node: \")\n    heuristic[node] = int(input(\"Enter heuristic value: \"))\n    graph[node] = input(\"Enter neighbors separated by space: \").split()\nstart = input(\"Enter start node: \")\ngoal = input(\"Enter goal node: \")\nbest_first_search(graph, heuristic, start, goal)",
+        "detail": "bfs",
+        "documentation": {}
+    },
+    {
+        "label": "heuristic",
+        "kind": 5,
+        "importPath": "bfs",
+        "description": "bfs",
+        "peekOfCode": "heuristic = {}\nn = int(input(\"Enter number of nodes: \"))\nfor i in range(n):\n    node = input(\"Enter node: \")\n    heuristic[node] = int(input(\"Enter heuristic value: \"))\n    graph[node] = input(\"Enter neighbors separated by space: \").split()\nstart = input(\"Enter start node: \")\ngoal = input(\"Enter goal node: \")\nbest_first_search(graph, heuristic, start, goal)",
+        "detail": "bfs",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "bfs",
+        "description": "bfs",
+        "peekOfCode": "n = int(input(\"Enter number of nodes: \"))\nfor i in range(n):\n    node = input(\"Enter node: \")\n    heuristic[node] = int(input(\"Enter heuristic value: \"))\n    graph[node] = input(\"Enter neighbors separated by space: \").split()\nstart = input(\"Enter start node: \")\ngoal = input(\"Enter goal node: \")\nbest_first_search(graph, heuristic, start, goal)",
+        "detail": "bfs",
+        "documentation": {}
+    },
+    {
+        "label": "start",
+        "kind": 5,
+        "importPath": "bfs",
+        "description": "bfs",
+        "peekOfCode": "start = input(\"Enter start node: \")\ngoal = input(\"Enter goal node: \")\nbest_first_search(graph, heuristic, start, goal)",
+        "detail": "bfs",
+        "documentation": {}
+    },
+    {
+        "label": "goal",
+        "kind": 5,
+        "importPath": "bfs",
+        "description": "bfs",
+        "peekOfCode": "goal = input(\"Enter goal node: \")\nbest_first_search(graph, heuristic, start, goal)",
+        "detail": "bfs",
+        "documentation": {}
+    },
+    {
+        "label": "objective_function",
+        "kind": 2,
+        "importPath": "hill_climbing",
+        "description": "hill_climbing",
+        "peekOfCode": "def objective_function(x):\n    return -(x - 5)**2 + 25\n# Hill Climbing Algorithm\ndef hill_climbing(start, step_size, max_iterations):\n    # Current position\n    current = start\n    current_value = objective_function(current)\n    print(\"Starting Point =\", current)\n    print(\"Function Value =\", current_value)\n    print()",
+        "detail": "hill_climbing",
+        "documentation": {}
+    },
+    {
+        "label": "hill_climbing",
+        "kind": 2,
+        "importPath": "hill_climbing",
+        "description": "hill_climbing",
+        "peekOfCode": "def hill_climbing(start, step_size, max_iterations):\n    # Current position\n    current = start\n    current_value = objective_function(current)\n    print(\"Starting Point =\", current)\n    print(\"Function Value =\", current_value)\n    print()\n    for i in range(max_iterations):\n        # Generate neighboring solutions\n        left = current - step_size",
+        "detail": "hill_climbing",
+        "documentation": {}
+    },
+    {
+        "label": "start_position",
+        "kind": 5,
+        "importPath": "hill_climbing",
+        "description": "hill_climbing",
+        "peekOfCode": "start_position = float(input(\"Enter starting position: \"))\nstep_size = float(input(\"Enter step size: \"))\nmax_iterations = int(input(\"Enter maximum iterations: \"))\nbest_x, best_value = hill_climbing(start_position,step_size,max_iterations)\nprint(\"\\nOptimal Solution Found\")\nprint(\"x =\", round(best_x, 2))\nprint(\"Maximum Value =\", round(best_value, 2))",
+        "detail": "hill_climbing",
+        "documentation": {}
+    },
+    {
+        "label": "step_size",
+        "kind": 5,
+        "importPath": "hill_climbing",
+        "description": "hill_climbing",
+        "peekOfCode": "step_size = float(input(\"Enter step size: \"))\nmax_iterations = int(input(\"Enter maximum iterations: \"))\nbest_x, best_value = hill_climbing(start_position,step_size,max_iterations)\nprint(\"\\nOptimal Solution Found\")\nprint(\"x =\", round(best_x, 2))\nprint(\"Maximum Value =\", round(best_value, 2))",
+        "detail": "hill_climbing",
+        "documentation": {}
+    },
+    {
+        "label": "max_iterations",
+        "kind": 5,
+        "importPath": "hill_climbing",
+        "description": "hill_climbing",
+        "peekOfCode": "max_iterations = int(input(\"Enter maximum iterations: \"))\nbest_x, best_value = hill_climbing(start_position,step_size,max_iterations)\nprint(\"\\nOptimal Solution Found\")\nprint(\"x =\", round(best_x, 2))\nprint(\"Maximum Value =\", round(best_value, 2))",
+        "detail": "hill_climbing",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "k-means",
+        "description": "k-means",
+        "peekOfCode": "X = load_iris().data\n# Get number of clusters from user\nk = int(input(\"Enter number of clusters: \"))\n# Initialize first k points as centroids\ncentroids = X[:k]\n# Run K-Means algorithm\nfor _ in range(100):\n    labels = []\n    # Find nearest centroid for each point\n    for point in X:",
+        "detail": "k-means",
+        "documentation": {}
+    },
+    {
+        "label": "k",
+        "kind": 5,
+        "importPath": "k-means",
+        "description": "k-means",
+        "peekOfCode": "k = int(input(\"Enter number of clusters: \"))\n# Initialize first k points as centroids\ncentroids = X[:k]\n# Run K-Means algorithm\nfor _ in range(100):\n    labels = []\n    # Find nearest centroid for each point\n    for point in X:\n        distances = []\n        for centroid in centroids:",
+        "detail": "k-means",
+        "documentation": {}
+    },
+    {
+        "label": "centroids",
+        "kind": 5,
+        "importPath": "k-means",
+        "description": "k-means",
+        "peekOfCode": "centroids = X[:k]\n# Run K-Means algorithm\nfor _ in range(100):\n    labels = []\n    # Find nearest centroid for each point\n    for point in X:\n        distances = []\n        for centroid in centroids:\n            distance = np.linalg.norm(point - centroid)\n            distances.append(distance)",
+        "detail": "k-means",
+        "documentation": {}
+    },
+    {
+        "label": "centroids",
+        "kind": 5,
+        "importPath": "k-means",
+        "description": "k-means",
+        "peekOfCode": "centroids = X[:k] → Chooses the first k points as initial centroids.\nnp.linalg.norm(...) → Computes Euclidean distances.\nnp.argmin(...) → Finds the nearest centroid for each point.\nmean(axis=0) → Calculates the new centroid of each cluster.\nnp.allclose(...) → Checks if centroids have stopped changing.\nplt.scatter(...) → Visualizes clusters and centroids.\n\"\"\"",
+        "detail": "k-means",
+        "documentation": {}
+    },
+    {
+        "label": "kmeans",
+        "kind": 2,
+        "importPath": "k_means",
+        "description": "k_means",
+        "peekOfCode": "def kmeans(X, K, max_iters=100):\n    centroids = X[:K]\n    for _ in range(max_iters):\n        # Assign clusters\n        distances = np.linalg.norm(\n            X[:, np.newaxis] - centroids,\n            axis=2\n        )\n        labels = np.argmin(distances, axis=1)\n        # Update centroids",
+        "detail": "k_means",
+        "documentation": {}
+    },
+    {
+        "label": "iris",
+        "kind": 5,
+        "importPath": "k_means",
+        "description": "k_means",
+        "peekOfCode": "iris = load_iris()\nX = iris.data[:, :2]  # First two features\ndef kmeans(X, K, max_iters=100):\n    centroids = X[:K]\n    for _ in range(max_iters):\n        # Assign clusters\n        distances = np.linalg.norm(\n            X[:, np.newaxis] - centroids,\n            axis=2\n        )",
+        "detail": "k_means",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "k_means",
+        "description": "k_means",
+        "peekOfCode": "X = iris.data[:, :2]  # First two features\ndef kmeans(X, K, max_iters=100):\n    centroids = X[:K]\n    for _ in range(max_iters):\n        # Assign clusters\n        distances = np.linalg.norm(\n            X[:, np.newaxis] - centroids,\n            axis=2\n        )\n        labels = np.argmin(distances, axis=1)",
+        "detail": "k_means",
+        "documentation": {}
+    },
+    {
+        "label": "iris",
+        "kind": 5,
+        "importPath": "lda",
+        "description": "lda",
+        "peekOfCode": "iris = load_iris()\nX = iris.data\ny = iris.target\n# Number of features\nn_features = X.shape[1]\n# Overall mean\noverall_mean = np.mean(X, axis=0)\n# Within-class scatter matrix\nSw = np.zeros((n_features, n_features))\n# Between-class scatter matrix",
+        "detail": "lda",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "lda",
+        "description": "lda",
+        "peekOfCode": "X = iris.data\ny = iris.target\n# Number of features\nn_features = X.shape[1]\n# Overall mean\noverall_mean = np.mean(X, axis=0)\n# Within-class scatter matrix\nSw = np.zeros((n_features, n_features))\n# Between-class scatter matrix\nSb = np.zeros((n_features, n_features))",
+        "detail": "lda",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "lda",
+        "description": "lda",
+        "peekOfCode": "y = iris.target\n# Number of features\nn_features = X.shape[1]\n# Overall mean\noverall_mean = np.mean(X, axis=0)\n# Within-class scatter matrix\nSw = np.zeros((n_features, n_features))\n# Between-class scatter matrix\nSb = np.zeros((n_features, n_features))\nfor c in np.unique(y):",
+        "detail": "lda",
+        "documentation": {}
+    },
+    {
+        "label": "n_features",
+        "kind": 5,
+        "importPath": "lda",
+        "description": "lda",
+        "peekOfCode": "n_features = X.shape[1]\n# Overall mean\noverall_mean = np.mean(X, axis=0)\n# Within-class scatter matrix\nSw = np.zeros((n_features, n_features))\n# Between-class scatter matrix\nSb = np.zeros((n_features, n_features))\nfor c in np.unique(y):\n    Xc = X[y == c]\n    class_mean = np.mean(Xc, axis=0)",
+        "detail": "lda",
+        "documentation": {}
+    },
+    {
+        "label": "overall_mean",
+        "kind": 5,
+        "importPath": "lda",
+        "description": "lda",
+        "peekOfCode": "overall_mean = np.mean(X, axis=0)\n# Within-class scatter matrix\nSw = np.zeros((n_features, n_features))\n# Between-class scatter matrix\nSb = np.zeros((n_features, n_features))\nfor c in np.unique(y):\n    Xc = X[y == c]\n    class_mean = np.mean(Xc, axis=0)\n    # Compute Sw\n    for row in Xc:",
+        "detail": "lda",
+        "documentation": {}
+    },
+    {
+        "label": "Sw",
+        "kind": 5,
+        "importPath": "lda",
+        "description": "lda",
+        "peekOfCode": "Sw = np.zeros((n_features, n_features))\n# Between-class scatter matrix\nSb = np.zeros((n_features, n_features))\nfor c in np.unique(y):\n    Xc = X[y == c]\n    class_mean = np.mean(Xc, axis=0)\n    # Compute Sw\n    for row in Xc:\n        diff = (row - class_mean).reshape(-1, 1)\n        Sw += diff @ diff.T",
+        "detail": "lda",
+        "documentation": {}
+    },
+    {
+        "label": "Sb",
+        "kind": 5,
+        "importPath": "lda",
+        "description": "lda",
+        "peekOfCode": "Sb = np.zeros((n_features, n_features))\nfor c in np.unique(y):\n    Xc = X[y == c]\n    class_mean = np.mean(Xc, axis=0)\n    # Compute Sw\n    for row in Xc:\n        diff = (row - class_mean).reshape(-1, 1)\n        Sw += diff @ diff.T\n    # Compute Sb\n    diff = (class_mean - overall_mean).reshape(-1, 1)",
+        "detail": "lda",
+        "documentation": {}
+    },
+    {
+        "label": "idx",
+        "kind": 5,
+        "importPath": "lda",
+        "description": "lda",
+        "peekOfCode": "idx = np.argsort(eigen_values)[::-1]\neigen_values = eigen_values[idx]\neigen_vectors = eigen_vectors[:, idx]\n# Select first 2 Linear Discriminants\nW = eigen_vectors[:, :2]\n# Project data\nX_lda = X @ W\n# Plot\nplt.scatter(X_lda[:, 0], X_lda[:, 1], c=y)\nplt.xlabel(\"LD1\")",
+        "detail": "lda",
+        "documentation": {}
+    },
+    {
+        "label": "eigen_values",
+        "kind": 5,
+        "importPath": "lda",
+        "description": "lda",
+        "peekOfCode": "eigen_values = eigen_values[idx]\neigen_vectors = eigen_vectors[:, idx]\n# Select first 2 Linear Discriminants\nW = eigen_vectors[:, :2]\n# Project data\nX_lda = X @ W\n# Plot\nplt.scatter(X_lda[:, 0], X_lda[:, 1], c=y)\nplt.xlabel(\"LD1\")\nplt.ylabel(\"LD2\")",
+        "detail": "lda",
+        "documentation": {}
+    },
+    {
+        "label": "eigen_vectors",
+        "kind": 5,
+        "importPath": "lda",
+        "description": "lda",
+        "peekOfCode": "eigen_vectors = eigen_vectors[:, idx]\n# Select first 2 Linear Discriminants\nW = eigen_vectors[:, :2]\n# Project data\nX_lda = X @ W\n# Plot\nplt.scatter(X_lda[:, 0], X_lda[:, 1], c=y)\nplt.xlabel(\"LD1\")\nplt.ylabel(\"LD2\")\nplt.title(\"LDA Projection of Iris Dataset\")",
+        "detail": "lda",
+        "documentation": {}
+    },
+    {
+        "label": "W",
+        "kind": 5,
+        "importPath": "lda",
+        "description": "lda",
+        "peekOfCode": "W = eigen_vectors[:, :2]\n# Project data\nX_lda = X @ W\n# Plot\nplt.scatter(X_lda[:, 0], X_lda[:, 1], c=y)\nplt.xlabel(\"LD1\")\nplt.ylabel(\"LD2\")\nplt.title(\"LDA Projection of Iris Dataset\")\nplt.colorbar(label=\"Target Class\")\nplt.show()",
+        "detail": "lda",
+        "documentation": {}
+    },
+    {
+        "label": "X_lda",
+        "kind": 5,
+        "importPath": "lda",
+        "description": "lda",
+        "peekOfCode": "X_lda = X @ W\n# Plot\nplt.scatter(X_lda[:, 0], X_lda[:, 1], c=y)\nplt.xlabel(\"LD1\")\nplt.ylabel(\"LD2\")\nplt.title(\"LDA Projection of Iris Dataset\")\nplt.colorbar(label=\"Target Class\")\nplt.show()\n\"\"\"\nload_iris().data → Loads the Iris dataset.",
+        "detail": "lda",
+        "documentation": {}
+    },
+    {
+        "label": "proximity_matrix",
+        "kind": 2,
+        "importPath": "linkage",
+        "description": "linkage",
+        "peekOfCode": "def proximity_matrix(data):\n    n = len(data)\n    matrix = np.zeros((n, n))\n    for i in range(n):\n        for j in range(i + 1, n):\n            # Euclidean Distance\n            distance = np.linalg.norm(data[i] - data[j])\n            matrix[i][j] = distance\n            matrix[j][i] = distance\n    return matrix",
+        "detail": "linkage",
+        "documentation": {}
+    },
+    {
+        "label": "plot_dendrogram",
+        "kind": 2,
+        "importPath": "linkage",
+        "description": "linkage",
+        "peekOfCode": "def plot_dendrogram(data, method):\n    # Perform hierarchical clustering\n    linkage_matrix = linkage(data, method=method)\n    # Draw dendrogram\n    dendrogram(linkage_matrix)\n    plt.title(f\"{method.capitalize()} Linkage\")\n    plt.xlabel(\"Data Points\")\n    plt.ylabel(\"Distance\")\n    plt.show()\n# Display Proximity Matrix",
+        "detail": "linkage",
+        "documentation": {}
+    },
+    {
+        "label": "iris",
+        "kind": 5,
+        "importPath": "linkage",
+        "description": "linkage",
+        "peekOfCode": "iris = load_iris()\n# Take first 6 samples for simplicity\ndata = iris.data[:6]\n# Function to calculate proximity matrix\ndef proximity_matrix(data):\n    n = len(data)\n    matrix = np.zeros((n, n))\n    for i in range(n):\n        for j in range(i + 1, n):\n            # Euclidean Distance",
+        "detail": "linkage",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "linkage",
+        "description": "linkage",
+        "peekOfCode": "data = iris.data[:6]\n# Function to calculate proximity matrix\ndef proximity_matrix(data):\n    n = len(data)\n    matrix = np.zeros((n, n))\n    for i in range(n):\n        for j in range(i + 1, n):\n            # Euclidean Distance\n            distance = np.linalg.norm(data[i] - data[j])\n            matrix[i][j] = distance",
+        "detail": "linkage",
+        "documentation": {}
+    },
+    {
+        "label": "minimax",
+        "kind": 2,
+        "importPath": "minmax",
+        "description": "minmax",
+        "peekOfCode": "def minimax(depth, node, isMax, values, max_depth):\n    # Leaf node reached\n    if depth == max_depth:\n        return values[node]\n    if isMax:\n        return max(\n            minimax(depth + 1, node * 2, False, values, max_depth),\n            minimax(depth + 1, node * 2 + 1, False, values, max_depth)\n        )\n    else:",
+        "detail": "minmax",
+        "documentation": {}
+    },
+    {
+        "label": "depth",
+        "kind": 5,
+        "importPath": "minmax",
+        "description": "minmax",
+        "peekOfCode": "depth = int(input(\"Enter depth of tree: \"))\nleaf_nodes = 2 ** depth\nprint(f\"Enter {leaf_nodes} leaf node values:\")\nvalues = list(map(int, input().split()))\nplayer = input(\"Enter starting player (MAX/MIN): \").upper()\nisMax = True if player == \"MAX\" else False\n# Function Call\nresult = minimax(0, 0, isMax, values, depth)\nprint(\"Optimal Value =\", result)",
+        "detail": "minmax",
+        "documentation": {}
+    },
+    {
+        "label": "leaf_nodes",
+        "kind": 5,
+        "importPath": "minmax",
+        "description": "minmax",
+        "peekOfCode": "leaf_nodes = 2 ** depth\nprint(f\"Enter {leaf_nodes} leaf node values:\")\nvalues = list(map(int, input().split()))\nplayer = input(\"Enter starting player (MAX/MIN): \").upper()\nisMax = True if player == \"MAX\" else False\n# Function Call\nresult = minimax(0, 0, isMax, values, depth)\nprint(\"Optimal Value =\", result)",
+        "detail": "minmax",
+        "documentation": {}
+    },
+    {
+        "label": "values",
+        "kind": 5,
+        "importPath": "minmax",
+        "description": "minmax",
+        "peekOfCode": "values = list(map(int, input().split()))\nplayer = input(\"Enter starting player (MAX/MIN): \").upper()\nisMax = True if player == \"MAX\" else False\n# Function Call\nresult = minimax(0, 0, isMax, values, depth)\nprint(\"Optimal Value =\", result)",
+        "detail": "minmax",
+        "documentation": {}
+    },
+    {
+        "label": "player",
+        "kind": 5,
+        "importPath": "minmax",
+        "description": "minmax",
+        "peekOfCode": "player = input(\"Enter starting player (MAX/MIN): \").upper()\nisMax = True if player == \"MAX\" else False\n# Function Call\nresult = minimax(0, 0, isMax, values, depth)\nprint(\"Optimal Value =\", result)",
+        "detail": "minmax",
+        "documentation": {}
+    },
+    {
+        "label": "isMax",
+        "kind": 5,
+        "importPath": "minmax",
+        "description": "minmax",
+        "peekOfCode": "isMax = True if player == \"MAX\" else False\n# Function Call\nresult = minimax(0, 0, isMax, values, depth)\nprint(\"Optimal Value =\", result)",
+        "detail": "minmax",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "minmax",
+        "description": "minmax",
+        "peekOfCode": "result = minimax(0, 0, isMax, values, depth)\nprint(\"Optimal Value =\", result)",
+        "detail": "minmax",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "naive",
+        "description": "naive",
+        "peekOfCode": "df = pd.read_csv(\"titanic.csv\")\ndf = df[['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Survived']]\ndf['Age'] = df['Age'].fillna(df['Age'].median())\ndf['Sex'] = df['Sex'].map({'male': 0, 'female': 1})\nX = df.drop('Survived', axis=1)\ny = df['Survived']\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=42)\nmodel = GaussianNB()\nmodel.fit(X_train, y_train)\ny_pred = model.predict(X_test)",
+        "detail": "naive",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "naive",
+        "description": "naive",
+        "peekOfCode": "df = df[['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Survived']]\ndf['Age'] = df['Age'].fillna(df['Age'].median())\ndf['Sex'] = df['Sex'].map({'male': 0, 'female': 1})\nX = df.drop('Survived', axis=1)\ny = df['Survived']\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=42)\nmodel = GaussianNB()\nmodel.fit(X_train, y_train)\ny_pred = model.predict(X_test)\naccuracy = accuracy_score(y_test, y_pred)",
+        "detail": "naive",
+        "documentation": {}
+    },
+    {
+        "label": "df['Age']",
+        "kind": 5,
+        "importPath": "naive",
+        "description": "naive",
+        "peekOfCode": "df['Age'] = df['Age'].fillna(df['Age'].median())\ndf['Sex'] = df['Sex'].map({'male': 0, 'female': 1})\nX = df.drop('Survived', axis=1)\ny = df['Survived']\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=42)\nmodel = GaussianNB()\nmodel.fit(X_train, y_train)\ny_pred = model.predict(X_test)\naccuracy = accuracy_score(y_test, y_pred)\nprint(\"Naive Bayes Classifier Accuracy on Titanic dataset: {:.2f}%\".format(accuracy * 100))",
+        "detail": "naive",
+        "documentation": {}
+    },
+    {
+        "label": "df['Sex']",
+        "kind": 5,
+        "importPath": "naive",
+        "description": "naive",
+        "peekOfCode": "df['Sex'] = df['Sex'].map({'male': 0, 'female': 1})\nX = df.drop('Survived', axis=1)\ny = df['Survived']\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=42)\nmodel = GaussianNB()\nmodel.fit(X_train, y_train)\ny_pred = model.predict(X_test)\naccuracy = accuracy_score(y_test, y_pred)\nprint(\"Naive Bayes Classifier Accuracy on Titanic dataset: {:.2f}%\".format(accuracy * 100))\ncm = confusion_matrix(y_test, y_pred)",
+        "detail": "naive",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "naive",
+        "description": "naive",
+        "peekOfCode": "X = df.drop('Survived', axis=1)\ny = df['Survived']\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=42)\nmodel = GaussianNB()\nmodel.fit(X_train, y_train)\ny_pred = model.predict(X_test)\naccuracy = accuracy_score(y_test, y_pred)\nprint(\"Naive Bayes Classifier Accuracy on Titanic dataset: {:.2f}%\".format(accuracy * 100))\ncm = confusion_matrix(y_test, y_pred)\nprint(\"Confusion Matrix:\")",
+        "detail": "naive",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "naive",
+        "description": "naive",
+        "peekOfCode": "y = df['Survived']\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=42)\nmodel = GaussianNB()\nmodel.fit(X_train, y_train)\ny_pred = model.predict(X_test)\naccuracy = accuracy_score(y_test, y_pred)\nprint(\"Naive Bayes Classifier Accuracy on Titanic dataset: {:.2f}%\".format(accuracy * 100))\ncm = confusion_matrix(y_test, y_pred)\nprint(\"Confusion Matrix:\")\nprint(cm)",
+        "detail": "naive",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "naive",
+        "description": "naive",
+        "peekOfCode": "model = GaussianNB()\nmodel.fit(X_train, y_train)\ny_pred = model.predict(X_test)\naccuracy = accuracy_score(y_test, y_pred)\nprint(\"Naive Bayes Classifier Accuracy on Titanic dataset: {:.2f}%\".format(accuracy * 100))\ncm = confusion_matrix(y_test, y_pred)\nprint(\"Confusion Matrix:\")\nprint(cm)",
+        "detail": "naive",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "naive",
+        "description": "naive",
+        "peekOfCode": "y_pred = model.predict(X_test)\naccuracy = accuracy_score(y_test, y_pred)\nprint(\"Naive Bayes Classifier Accuracy on Titanic dataset: {:.2f}%\".format(accuracy * 100))\ncm = confusion_matrix(y_test, y_pred)\nprint(\"Confusion Matrix:\")\nprint(cm)",
+        "detail": "naive",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy",
+        "kind": 5,
+        "importPath": "naive",
+        "description": "naive",
+        "peekOfCode": "accuracy = accuracy_score(y_test, y_pred)\nprint(\"Naive Bayes Classifier Accuracy on Titanic dataset: {:.2f}%\".format(accuracy * 100))\ncm = confusion_matrix(y_test, y_pred)\nprint(\"Confusion Matrix:\")\nprint(cm)",
+        "detail": "naive",
+        "documentation": {}
+    },
+    {
+        "label": "cm",
+        "kind": 5,
+        "importPath": "naive",
+        "description": "naive",
+        "peekOfCode": "cm = confusion_matrix(y_test, y_pred)\nprint(\"Confusion Matrix:\")\nprint(cm)",
+        "detail": "naive",
+        "documentation": {}
+    },
+    {
+        "label": "iris",
+        "kind": 5,
+        "importPath": "pca",
+        "description": "pca",
+        "peekOfCode": "iris = load_iris()\nX = iris.data\ny = iris.target\n# Mean centering\nX = X - np.mean(X, axis=0)\n# Covariance matrix\ncov = np.cov(X.T)\n# Eigenvalues and Eigenvectors\neigen_values, eigen_vectors = np.linalg.eig(cov)\n# Sort eigenvalues in descending order",
+        "detail": "pca",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "pca",
+        "description": "pca",
+        "peekOfCode": "X = iris.data\ny = iris.target\n# Mean centering\nX = X - np.mean(X, axis=0)\n# Covariance matrix\ncov = np.cov(X.T)\n# Eigenvalues and Eigenvectors\neigen_values, eigen_vectors = np.linalg.eig(cov)\n# Sort eigenvalues in descending order\nidx = np.argsort(eigen_values)[::-1]",
+        "detail": "pca",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "pca",
+        "description": "pca",
+        "peekOfCode": "y = iris.target\n# Mean centering\nX = X - np.mean(X, axis=0)\n# Covariance matrix\ncov = np.cov(X.T)\n# Eigenvalues and Eigenvectors\neigen_values, eigen_vectors = np.linalg.eig(cov)\n# Sort eigenvalues in descending order\nidx = np.argsort(eigen_values)[::-1]\neigen_values = eigen_values[idx]",
+        "detail": "pca",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "pca",
+        "description": "pca",
+        "peekOfCode": "X = X - np.mean(X, axis=0)\n# Covariance matrix\ncov = np.cov(X.T)\n# Eigenvalues and Eigenvectors\neigen_values, eigen_vectors = np.linalg.eig(cov)\n# Sort eigenvalues in descending order\nidx = np.argsort(eigen_values)[::-1]\neigen_values = eigen_values[idx]\neigen_vectors = eigen_vectors[:, idx]\n# Select first 2 principal components",
+        "detail": "pca",
+        "documentation": {}
+    },
+    {
+        "label": "cov",
+        "kind": 5,
+        "importPath": "pca",
+        "description": "pca",
+        "peekOfCode": "cov = np.cov(X.T)\n# Eigenvalues and Eigenvectors\neigen_values, eigen_vectors = np.linalg.eig(cov)\n# Sort eigenvalues in descending order\nidx = np.argsort(eigen_values)[::-1]\neigen_values = eigen_values[idx]\neigen_vectors = eigen_vectors[:, idx]\n# Select first 2 principal components\ncomponents = eigen_vectors[:, :2]\n# Transform data",
+        "detail": "pca",
+        "documentation": {}
+    },
+    {
+        "label": "idx",
+        "kind": 5,
+        "importPath": "pca",
+        "description": "pca",
+        "peekOfCode": "idx = np.argsort(eigen_values)[::-1]\neigen_values = eigen_values[idx]\neigen_vectors = eigen_vectors[:, idx]\n# Select first 2 principal components\ncomponents = eigen_vectors[:, :2]\n# Transform data\nX_pca = X @ components\n# Scatter plot with 3 colors\nplt.scatter(X_pca[:, 0], X_pca[:, 1], c=y)\nplt.xlabel(\"PC1\")",
+        "detail": "pca",
+        "documentation": {}
+    },
+    {
+        "label": "eigen_values",
+        "kind": 5,
+        "importPath": "pca",
+        "description": "pca",
+        "peekOfCode": "eigen_values = eigen_values[idx]\neigen_vectors = eigen_vectors[:, idx]\n# Select first 2 principal components\ncomponents = eigen_vectors[:, :2]\n# Transform data\nX_pca = X @ components\n# Scatter plot with 3 colors\nplt.scatter(X_pca[:, 0], X_pca[:, 1], c=y)\nplt.xlabel(\"PC1\")\nplt.ylabel(\"PC2\")",
+        "detail": "pca",
+        "documentation": {}
+    },
+    {
+        "label": "eigen_vectors",
+        "kind": 5,
+        "importPath": "pca",
+        "description": "pca",
+        "peekOfCode": "eigen_vectors = eigen_vectors[:, idx]\n# Select first 2 principal components\ncomponents = eigen_vectors[:, :2]\n# Transform data\nX_pca = X @ components\n# Scatter plot with 3 colors\nplt.scatter(X_pca[:, 0], X_pca[:, 1], c=y)\nplt.xlabel(\"PC1\")\nplt.ylabel(\"PC2\")\nplt.title(\"PCA Projection of Iris Dataset\")",
+        "detail": "pca",
+        "documentation": {}
+    },
+    {
+        "label": "components",
+        "kind": 5,
+        "importPath": "pca",
+        "description": "pca",
+        "peekOfCode": "components = eigen_vectors[:, :2]\n# Transform data\nX_pca = X @ components\n# Scatter plot with 3 colors\nplt.scatter(X_pca[:, 0], X_pca[:, 1], c=y)\nplt.xlabel(\"PC1\")\nplt.ylabel(\"PC2\")\nplt.title(\"PCA Projection of Iris Dataset\")\nplt.colorbar(label=\"Target Class\")\nplt.show()",
+        "detail": "pca",
+        "documentation": {}
+    },
+    {
+        "label": "X_pca",
+        "kind": 5,
+        "importPath": "pca",
+        "description": "pca",
+        "peekOfCode": "X_pca = X @ components\n# Scatter plot with 3 colors\nplt.scatter(X_pca[:, 0], X_pca[:, 1], c=y)\nplt.xlabel(\"PC1\")\nplt.ylabel(\"PC2\")\nplt.title(\"PCA Projection of Iris Dataset\")\nplt.colorbar(label=\"Target Class\")\nplt.show()",
+        "detail": "pca",
+        "documentation": {}
+    },
+    {
+        "label": "step",
+        "kind": 2,
+        "importPath": "perceptron",
+        "description": "perceptron",
+        "peekOfCode": "def step(x):\n    return 1 if x >= 0 else 0\nX = np.array([[0,0],[0,1],[1,0],[1,1]])\n# AND Gate\nw = np.array([1,1])\nb = -1.5\nprint(\"AND Gate\")\nfor x in X:\n    print(x, \"->\", step(np.dot(x,w)+b))\n# OR Gate",
+        "detail": "perceptron",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "perceptron",
+        "description": "perceptron",
+        "peekOfCode": "X = np.array([[0,0],[0,1],[1,0],[1,1]])\n# AND Gate\nw = np.array([1,1])\nb = -1.5\nprint(\"AND Gate\")\nfor x in X:\n    print(x, \"->\", step(np.dot(x,w)+b))\n# OR Gate\nw = np.array([1,1])\nb = -0.5",
+        "detail": "perceptron",
+        "documentation": {}
+    },
+    {
+        "label": "w",
+        "kind": 5,
+        "importPath": "perceptron",
+        "description": "perceptron",
+        "peekOfCode": "w = np.array([1,1])\nb = -1.5\nprint(\"AND Gate\")\nfor x in X:\n    print(x, \"->\", step(np.dot(x,w)+b))\n# OR Gate\nw = np.array([1,1])\nb = -0.5\nprint(\"\\nOR Gate\")\nfor x in X:",
+        "detail": "perceptron",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "perceptron",
+        "description": "perceptron",
+        "peekOfCode": "b = -1.5\nprint(\"AND Gate\")\nfor x in X:\n    print(x, \"->\", step(np.dot(x,w)+b))\n# OR Gate\nw = np.array([1,1])\nb = -0.5\nprint(\"\\nOR Gate\")\nfor x in X:\n    print(x, \"->\", step(np.dot(x,w)+b))",
+        "detail": "perceptron",
+        "documentation": {}
+    },
+    {
+        "label": "w",
+        "kind": 5,
+        "importPath": "perceptron",
+        "description": "perceptron",
+        "peekOfCode": "w = np.array([1,1])\nb = -0.5\nprint(\"\\nOR Gate\")\nfor x in X:\n    print(x, \"->\", step(np.dot(x,w)+b))",
+        "detail": "perceptron",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "perceptron",
+        "description": "perceptron",
+        "peekOfCode": "b = -0.5\nprint(\"\\nOR Gate\")\nfor x in X:\n    print(x, \"->\", step(np.dot(x,w)+b))",
+        "detail": "perceptron",
+        "documentation": {}
+    }
+]
