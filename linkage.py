@@ -23,7 +23,7 @@ def plot_dendrogram(data, method):
     linkage_matrix = linkage(data, method=method)
     # Draw dendrogram
     dendrogram(linkage_matrix)
-    plt.title(f"{method.capitalize()} Linkage")
+    plt.title(f"{method} Linkage")
     plt.xlabel("Data Points")
     plt.ylabel("Distance")
     plt.show()
