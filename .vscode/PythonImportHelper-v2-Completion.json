@@ -1,11 +1,11 @@
 [
     {
-        "label": "pandas",
+        "label": "numpy",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "pandas",
-        "description": "pandas",
-        "detail": "pandas",
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
         "documentation": {}
     },
     {
@@ -66,44 +66,61 @@
         "documentation": {}
     },
     {
-        "label": "PriorityQueue",
-        "importPath": "queue",
-        "description": "queue",
+        "label": "load_iris",
+        "importPath": "sklearn.datasets",
+        "description": "sklearn.datasets",
         "isExtraImport": true,
-        "detail": "queue",
+        "detail": "sklearn.datasets",
         "documentation": {}
     },
     {
-        "label": "PriorityQueue",
-        "importPath": "queue",
-        "description": "queue",
+        "label": "load_iris",
+        "importPath": "sklearn.datasets",
+        "description": "sklearn.datasets",
         "isExtraImport": true,
-        "detail": "queue",
+        "detail": "sklearn.datasets",
         "documentation": {}
     },
     {
-        "label": "numpy",
+        "label": "load_iris",
+        "importPath": "sklearn.datasets",
+        "description": "sklearn.datasets",
+        "isExtraImport": true,
+        "detail": "sklearn.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "numpy",
-        "description": "numpy",
-        "detail": "numpy",
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
         "documentation": {}
     },
     {
-        "label": "dendrogram",
-        "importPath": "scipy.cluster.hierarchy",
-        "description": "scipy.cluster.hierarchy",
+        "label": "seaborn",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "scipy.cluster.hierarchy",
+        "importPath": "seaborn",
+        "description": "seaborn",
+        "detail": "seaborn",
         "documentation": {}
     },
     {
-        "label": "linkage",
-        "importPath": "scipy.cluster.hierarchy",
-        "description": "scipy.cluster.hierarchy",
+        "label": "PriorityQueue",
+        "importPath": "queue",
+        "description": "queue",
         "isExtraImport": true,
-        "detail": "scipy.cluster.hierarchy",
+        "detail": "queue",
+        "documentation": {}
+    },
+    {
+        "label": "PriorityQueue",
+        "importPath": "queue",
+        "description": "queue",
+        "isExtraImport": true,
+        "detail": "queue",
         "documentation": {}
     },
     {
@@ -115,11 +132,19 @@
         "documentation": {}
     },
     {
-        "label": "GaussianNB",
-        "importPath": "sklearn.naive_bayes",
-        "description": "sklearn.naive_bayes",
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
         "isExtraImport": true,
-        "detail": "sklearn.naive_bayes",
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "KNeighborsClassifier",
+        "importPath": "sklearn.neighbors",
+        "description": "sklearn.neighbors",
+        "isExtraImport": true,
+        "detail": "sklearn.neighbors",
         "documentation": {}
     },
     {
@@ -139,30 +164,221 @@
         "documentation": {}
     },
     {
+        "label": "accuracy_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "confusion_matrix",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "LinearDiscriminantAnalysis",
+        "importPath": "sklearn.discriminant_analysis",
+        "description": "sklearn.discriminant_analysis",
+        "isExtraImport": true,
+        "detail": "sklearn.discriminant_analysis",
+        "documentation": {}
+    },
+    {
+        "label": "dendrogram",
+        "importPath": "scipy.cluster.hierarchy",
+        "description": "scipy.cluster.hierarchy",
+        "isExtraImport": true,
+        "detail": "scipy.cluster.hierarchy",
+        "documentation": {}
+    },
+    {
+        "label": "linkage",
+        "importPath": "scipy.cluster.hierarchy",
+        "description": "scipy.cluster.hierarchy",
+        "isExtraImport": true,
+        "detail": "scipy.cluster.hierarchy",
+        "documentation": {}
+    },
+    {
+        "label": "GaussianNB",
+        "importPath": "sklearn.naive_bayes",
+        "description": "sklearn.naive_bayes",
+        "isExtraImport": true,
+        "detail": "sklearn.naive_bayes",
+        "documentation": {}
+    },
+    {
+        "label": "PCA",
+        "importPath": "sklearn.decomposition",
+        "description": "sklearn.decomposition",
+        "isExtraImport": true,
+        "detail": "sklearn.decomposition",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "plots.3d",
+        "description": "plots.3d",
+        "peekOfCode": "X = load_iris().data\nx = X[:, 2]\ny = X[:, 3]\nXg, Yg = np.meshgrid(\n    np.linspace(min(x), max(x), 50),\n    np.linspace(min(y), max(y), 50)\n)\nZ = np.sin(Xg) * np.cos(Yg)\nax = plt.axes(projection='3d')\nax.plot_surface(Xg, Yg, Z)",
+        "detail": "plots.3d",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "plots.3d",
+        "description": "plots.3d",
+        "peekOfCode": "x = X[:, 2]\ny = X[:, 3]\nXg, Yg = np.meshgrid(\n    np.linspace(min(x), max(x), 50),\n    np.linspace(min(y), max(y), 50)\n)\nZ = np.sin(Xg) * np.cos(Yg)\nax = plt.axes(projection='3d')\nax.plot_surface(Xg, Yg, Z)\nplt.title(\"3D Surface Plot\")",
+        "detail": "plots.3d",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "plots.3d",
+        "description": "plots.3d",
+        "peekOfCode": "y = X[:, 3]\nXg, Yg = np.meshgrid(\n    np.linspace(min(x), max(x), 50),\n    np.linspace(min(y), max(y), 50)\n)\nZ = np.sin(Xg) * np.cos(Yg)\nax = plt.axes(projection='3d')\nax.plot_surface(Xg, Yg, Z)\nplt.title(\"3D Surface Plot\")\nplt.show()",
+        "detail": "plots.3d",
+        "documentation": {}
+    },
+    {
+        "label": "Z",
+        "kind": 5,
+        "importPath": "plots.3d",
+        "description": "plots.3d",
+        "peekOfCode": "Z = np.sin(Xg) * np.cos(Yg)\nax = plt.axes(projection='3d')\nax.plot_surface(Xg, Yg, Z)\nplt.title(\"3D Surface Plot\")\nplt.show()",
+        "detail": "plots.3d",
+        "documentation": {}
+    },
+    {
+        "label": "ax",
+        "kind": 5,
+        "importPath": "plots.3d",
+        "description": "plots.3d",
+        "peekOfCode": "ax = plt.axes(projection='3d')\nax.plot_surface(Xg, Yg, Z)\nplt.title(\"3D Surface Plot\")\nplt.show()",
+        "detail": "plots.3d",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "plots.boxplot",
+        "description": "plots.boxplot",
+        "peekOfCode": "X = load_iris().data\nplt.boxplot(X)\nplt.title(\"Box Plot\")\nplt.show()",
+        "detail": "plots.boxplot",
+        "documentation": {}
+    },
+    {
         "label": "iris",
         "kind": 5,
-        "importPath": "1.scatterplot",
-        "description": "1.scatterplot",
-        "peekOfCode": "iris = load_iris()\n# Convert dataset into DataFrame\ndf = pd.DataFrame(iris.data,columns=iris.feature_names)\n# Add target labels\ndf['Species'] = iris.target\n# Create scatter plot\nplt.figure(figsize=(8,6))\nplt.scatter(df['sepal length (cm)'],df['sepal width (cm)'],\n    c=df['Species'],      # Color points by species\n    cmap='viridis')",
-        "detail": "1.scatterplot",
+        "importPath": "plots.countour",
+        "description": "plots.countour",
+        "peekOfCode": "iris = load_iris()\nX = iris.data\n# Select 2 features\nx = X[:, 2]  # Petal Length\ny = X[:, 3]  # Petal Width\n# Create grid\nxg = np.linspace(x.min(), x.max(), 100)\nyg = np.linspace(y.min(), y.max(), 100)\nXg, Yg = np.meshgrid(xg, yg)\n# Sample function for contour levels",
+        "detail": "plots.countour",
         "documentation": {}
     },
     {
-        "label": "df",
+        "label": "X",
         "kind": 5,
-        "importPath": "1.scatterplot",
-        "description": "1.scatterplot",
-        "peekOfCode": "df = pd.DataFrame(iris.data,columns=iris.feature_names)\n# Add target labels\ndf['Species'] = iris.target\n# Create scatter plot\nplt.figure(figsize=(8,6))\nplt.scatter(df['sepal length (cm)'],df['sepal width (cm)'],\n    c=df['Species'],      # Color points by species\n    cmap='viridis')\n# Add labels and title\nplt.xlabel(\"Sepal Length (cm)\")",
-        "detail": "1.scatterplot",
+        "importPath": "plots.countour",
+        "description": "plots.countour",
+        "peekOfCode": "X = iris.data\n# Select 2 features\nx = X[:, 2]  # Petal Length\ny = X[:, 3]  # Petal Width\n# Create grid\nxg = np.linspace(x.min(), x.max(), 100)\nyg = np.linspace(y.min(), y.max(), 100)\nXg, Yg = np.meshgrid(xg, yg)\n# Sample function for contour levels\nZ = Xg**2 + Yg**2",
+        "detail": "plots.countour",
         "documentation": {}
     },
     {
-        "label": "df['Species']",
+        "label": "x",
         "kind": 5,
-        "importPath": "1.scatterplot",
-        "description": "1.scatterplot",
-        "peekOfCode": "df['Species'] = iris.target\n# Create scatter plot\nplt.figure(figsize=(8,6))\nplt.scatter(df['sepal length (cm)'],df['sepal width (cm)'],\n    c=df['Species'],      # Color points by species\n    cmap='viridis')\n# Add labels and title\nplt.xlabel(\"Sepal Length (cm)\")\nplt.ylabel(\"Sepal Width (cm)\")\nplt.title(\"Scatter Plot of Iris Dataset\")",
-        "detail": "1.scatterplot",
+        "importPath": "plots.countour",
+        "description": "plots.countour",
+        "peekOfCode": "x = X[:, 2]  # Petal Length\ny = X[:, 3]  # Petal Width\n# Create grid\nxg = np.linspace(x.min(), x.max(), 100)\nyg = np.linspace(y.min(), y.max(), 100)\nXg, Yg = np.meshgrid(xg, yg)\n# Sample function for contour levels\nZ = Xg**2 + Yg**2\n# Draw contour plot\nplt.contour(Xg, Yg, Z, 10)",
+        "detail": "plots.countour",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "plots.countour",
+        "description": "plots.countour",
+        "peekOfCode": "y = X[:, 3]  # Petal Width\n# Create grid\nxg = np.linspace(x.min(), x.max(), 100)\nyg = np.linspace(y.min(), y.max(), 100)\nXg, Yg = np.meshgrid(xg, yg)\n# Sample function for contour levels\nZ = Xg**2 + Yg**2\n# Draw contour plot\nplt.contour(Xg, Yg, Z, 10)\nplt.xlabel(\"Petal Length\")",
+        "detail": "plots.countour",
+        "documentation": {}
+    },
+    {
+        "label": "xg",
+        "kind": 5,
+        "importPath": "plots.countour",
+        "description": "plots.countour",
+        "peekOfCode": "xg = np.linspace(x.min(), x.max(), 100)\nyg = np.linspace(y.min(), y.max(), 100)\nXg, Yg = np.meshgrid(xg, yg)\n# Sample function for contour levels\nZ = Xg**2 + Yg**2\n# Draw contour plot\nplt.contour(Xg, Yg, Z, 10)\nplt.xlabel(\"Petal Length\")\nplt.ylabel(\"Petal Width\")\nplt.title(\"Contour Plot of Iris Features\")",
+        "detail": "plots.countour",
+        "documentation": {}
+    },
+    {
+        "label": "yg",
+        "kind": 5,
+        "importPath": "plots.countour",
+        "description": "plots.countour",
+        "peekOfCode": "yg = np.linspace(y.min(), y.max(), 100)\nXg, Yg = np.meshgrid(xg, yg)\n# Sample function for contour levels\nZ = Xg**2 + Yg**2\n# Draw contour plot\nplt.contour(Xg, Yg, Z, 10)\nplt.xlabel(\"Petal Length\")\nplt.ylabel(\"Petal Width\")\nplt.title(\"Contour Plot of Iris Features\")\nplt.show()",
+        "detail": "plots.countour",
+        "documentation": {}
+    },
+    {
+        "label": "Z",
+        "kind": 5,
+        "importPath": "plots.countour",
+        "description": "plots.countour",
+        "peekOfCode": "Z = Xg**2 + Yg**2\n# Draw contour plot\nplt.contour(Xg, Yg, Z, 10)\nplt.xlabel(\"Petal Length\")\nplt.ylabel(\"Petal Width\")\nplt.title(\"Contour Plot of Iris Features\")\nplt.show()",
+        "detail": "plots.countour",
+        "documentation": {}
+    },
+    {
+        "label": "iris",
+        "kind": 5,
+        "importPath": "plots.heatmap",
+        "description": "plots.heatmap",
+        "peekOfCode": "iris = load_iris()\n# Create DataFrame\ndata = pd.DataFrame(iris.data, columns=iris.feature_names)\n# Heatmap\nsns.heatmap(data.corr(), annot=True)\nplt.title(\"Iris Dataset Heatmap\")\nplt.show()",
+        "detail": "plots.heatmap",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "plots.heatmap",
+        "description": "plots.heatmap",
+        "peekOfCode": "data = pd.DataFrame(iris.data, columns=iris.feature_names)\n# Heatmap\nsns.heatmap(data.corr(), annot=True)\nplt.title(\"Iris Dataset Heatmap\")\nplt.show()",
+        "detail": "plots.heatmap",
+        "documentation": {}
+    },
+    {
+        "label": "iris",
+        "kind": 5,
+        "importPath": "plots.scatter",
+        "description": "plots.scatter",
+        "peekOfCode": "iris = load_iris()\nX = iris.data\ny = iris.target\nplt.scatter(X[:, 0], X[:, 1], c=y)\nplt.xlabel(\"Sepal Length\")\nplt.ylabel(\"Sepal Width\")\nplt.title(\"Scatter Plot\")\nplt.show()",
+        "detail": "plots.scatter",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "plots.scatter",
+        "description": "plots.scatter",
+        "peekOfCode": "X = iris.data\ny = iris.target\nplt.scatter(X[:, 0], X[:, 1], c=y)\nplt.xlabel(\"Sepal Length\")\nplt.ylabel(\"Sepal Width\")\nplt.title(\"Scatter Plot\")\nplt.show()",
+        "detail": "plots.scatter",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "plots.scatter",
+        "description": "plots.scatter",
+        "peekOfCode": "y = iris.target\nplt.scatter(X[:, 0], X[:, 1], c=y)\nplt.xlabel(\"Sepal Length\")\nplt.ylabel(\"Sepal Width\")\nplt.title(\"Scatter Plot\")\nplt.show()",
+        "detail": "plots.scatter",
         "documentation": {}
     },
     {
@@ -382,65 +598,92 @@
         "documentation": {}
     },
     {
+        "label": "df",
+        "kind": 5,
+        "importPath": "knn",
+        "description": "knn",
+        "peekOfCode": "df = pd.read_csv(\"glass.csv\")\n# Features and Target\nX = df.iloc[:, :-1]\ny = df.iloc[:, -1]\n# 70-30 Train-Test Split\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)\n# Euclidean Distance\nknn1 = KNeighborsClassifier(n_neighbors=3,metric='euclidean')\nknn1.fit(X_train, y_train)\npred1 = knn1.predict(X_test)",
+        "detail": "knn",
+        "documentation": {}
+    },
+    {
         "label": "X",
         "kind": 5,
-        "importPath": "k-means",
-        "description": "k-means",
-        "peekOfCode": "X = load_iris().data\n# Get number of clusters from user\nk = int(input(\"Enter number of clusters: \"))\n# Initialize first k points as centroids\ncentroids = X[:k]\n# Run K-Means algorithm\nfor _ in range(100):\n    labels = []\n    # Find nearest centroid for each point\n    for point in X:",
-        "detail": "k-means",
+        "importPath": "knn",
+        "description": "knn",
+        "peekOfCode": "X = df.iloc[:, :-1]\ny = df.iloc[:, -1]\n# 70-30 Train-Test Split\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)\n# Euclidean Distance\nknn1 = KNeighborsClassifier(n_neighbors=3,metric='euclidean')\nknn1.fit(X_train, y_train)\npred1 = knn1.predict(X_test)\nprint(\"Euclidean Distance\")\nprint(\"Accuracy:\", accuracy_score(y_test, pred1))",
+        "detail": "knn",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "knn",
+        "description": "knn",
+        "peekOfCode": "y = df.iloc[:, -1]\n# 70-30 Train-Test Split\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)\n# Euclidean Distance\nknn1 = KNeighborsClassifier(n_neighbors=3,metric='euclidean')\nknn1.fit(X_train, y_train)\npred1 = knn1.predict(X_test)\nprint(\"Euclidean Distance\")\nprint(\"Accuracy:\", accuracy_score(y_test, pred1))\nprint(\"Confusion Matrix:\")",
+        "detail": "knn",
+        "documentation": {}
+    },
+    {
+        "label": "knn1",
+        "kind": 5,
+        "importPath": "knn",
+        "description": "knn",
+        "peekOfCode": "knn1 = KNeighborsClassifier(n_neighbors=3,metric='euclidean')\nknn1.fit(X_train, y_train)\npred1 = knn1.predict(X_test)\nprint(\"Euclidean Distance\")\nprint(\"Accuracy:\", accuracy_score(y_test, pred1))\nprint(\"Confusion Matrix:\")\nprint(confusion_matrix(y_test, pred1))\n# Manhattan Distance\nknn2 = KNeighborsClassifier(n_neighbors=3,metric='manhattan')\nknn2.fit(X_train, y_train)",
+        "detail": "knn",
+        "documentation": {}
+    },
+    {
+        "label": "pred1",
+        "kind": 5,
+        "importPath": "knn",
+        "description": "knn",
+        "peekOfCode": "pred1 = knn1.predict(X_test)\nprint(\"Euclidean Distance\")\nprint(\"Accuracy:\", accuracy_score(y_test, pred1))\nprint(\"Confusion Matrix:\")\nprint(confusion_matrix(y_test, pred1))\n# Manhattan Distance\nknn2 = KNeighborsClassifier(n_neighbors=3,metric='manhattan')\nknn2.fit(X_train, y_train)\npred2 = knn2.predict(X_test)\nprint(\"\\nManhattan Distance\")",
+        "detail": "knn",
+        "documentation": {}
+    },
+    {
+        "label": "knn2",
+        "kind": 5,
+        "importPath": "knn",
+        "description": "knn",
+        "peekOfCode": "knn2 = KNeighborsClassifier(n_neighbors=3,metric='manhattan')\nknn2.fit(X_train, y_train)\npred2 = knn2.predict(X_test)\nprint(\"\\nManhattan Distance\")\nprint(\"Accuracy:\", accuracy_score(y_test, pred2))\nprint(\"Confusion Matrix:\")\nprint(confusion_matrix(y_test, pred2))",
+        "detail": "knn",
+        "documentation": {}
+    },
+    {
+        "label": "pred2",
+        "kind": 5,
+        "importPath": "knn",
+        "description": "knn",
+        "peekOfCode": "pred2 = knn2.predict(X_test)\nprint(\"\\nManhattan Distance\")\nprint(\"Accuracy:\", accuracy_score(y_test, pred2))\nprint(\"Confusion Matrix:\")\nprint(confusion_matrix(y_test, pred2))",
+        "detail": "knn",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "k_means",
+        "description": "k_means",
+        "peekOfCode": "X = load_iris().data\n# Number of clusters\nk = int(input(\"Enter number of clusters: \"))\n# Initialize first k points as centroids\ncentroids = X[:k]\nfor _ in range(100):\n    labels = []\n    # Assign each point to nearest centroid\n    for point in X:\n        distances = []",
+        "detail": "k_means",
         "documentation": {}
     },
     {
         "label": "k",
         "kind": 5,
-        "importPath": "k-means",
-        "description": "k-means",
-        "peekOfCode": "k = int(input(\"Enter number of clusters: \"))\n# Initialize first k points as centroids\ncentroids = X[:k]\n# Run K-Means algorithm\nfor _ in range(100):\n    labels = []\n    # Find nearest centroid for each point\n    for point in X:\n        distances = []\n        for centroid in centroids:",
-        "detail": "k-means",
+        "importPath": "k_means",
+        "description": "k_means",
+        "peekOfCode": "k = int(input(\"Enter number of clusters: \"))\n# Initialize first k points as centroids\ncentroids = X[:k]\nfor _ in range(100):\n    labels = []\n    # Assign each point to nearest centroid\n    for point in X:\n        distances = []\n        for centroid in centroids:\n            distances.append(np.linalg.norm(point - centroid))",
+        "detail": "k_means",
         "documentation": {}
     },
     {
         "label": "centroids",
         "kind": 5,
-        "importPath": "k-means",
-        "description": "k-means",
-        "peekOfCode": "centroids = X[:k]\n# Run K-Means algorithm\nfor _ in range(100):\n    labels = []\n    # Find nearest centroid for each point\n    for point in X:\n        distances = []\n        for centroid in centroids:\n            distance = np.linalg.norm(point - centroid)\n            distances.append(distance)",
-        "detail": "k-means",
-        "documentation": {}
-    },
-    {
-        "label": "centroids",
-        "kind": 5,
-        "importPath": "k-means",
-        "description": "k-means",
-        "peekOfCode": "centroids = X[:k] → Chooses the first k points as initial centroids.\nnp.linalg.norm(...) → Computes Euclidean distances.\nnp.argmin(...) → Finds the nearest centroid for each point.\nmean(axis=0) → Calculates the new centroid of each cluster.\nnp.allclose(...) → Checks if centroids have stopped changing.\nplt.scatter(...) → Visualizes clusters and centroids.\n\"\"\"",
-        "detail": "k-means",
-        "documentation": {}
-    },
-    {
-        "label": "kmeans",
-        "kind": 2,
         "importPath": "k_means",
         "description": "k_means",
-        "peekOfCode": "def kmeans(X, K, max_iters=100):\n    centroids = X[:K]\n    for _ in range(max_iters):\n        # Assign clusters\n        distances = np.linalg.norm(\n            X[:, np.newaxis] - centroids,\n            axis=2\n        )\n        labels = np.argmin(distances, axis=1)\n        # Update centroids",
-        "detail": "k_means",
-        "documentation": {}
-    },
-    {
-        "label": "iris",
-        "kind": 5,
-        "importPath": "k_means",
-        "description": "k_means",
-        "peekOfCode": "iris = load_iris()\nX = iris.data[:, :2]  # First two features\ndef kmeans(X, K, max_iters=100):\n    centroids = X[:K]\n    for _ in range(max_iters):\n        # Assign clusters\n        distances = np.linalg.norm(\n            X[:, np.newaxis] - centroids,\n            axis=2\n        )",
-        "detail": "k_means",
-        "documentation": {}
-    },
-    {
-        "label": "X",
-        "kind": 5,
-        "importPath": "k_means",
-        "description": "k_means",
-        "peekOfCode": "X = iris.data[:, :2]  # First two features\ndef kmeans(X, K, max_iters=100):\n    centroids = X[:K]\n    for _ in range(max_iters):\n        # Assign clusters\n        distances = np.linalg.norm(\n            X[:, np.newaxis] - centroids,\n            axis=2\n        )\n        labels = np.argmin(distances, axis=1)",
+        "peekOfCode": "centroids = X[:k]\nfor _ in range(100):\n    labels = []\n    # Assign each point to nearest centroid\n    for point in X:\n        distances = []\n        for centroid in centroids:\n            distances.append(np.linalg.norm(point - centroid))\n        labels.append(np.argmin(distances))\n    labels = np.array(labels)",
         "detail": "k_means",
         "documentation": {}
     },
@@ -449,7 +692,7 @@
         "kind": 5,
         "importPath": "lda",
         "description": "lda",
-        "peekOfCode": "iris = load_iris()\nX = iris.data\ny = iris.target\n# Number of features\nn_features = X.shape[1]\n# Overall mean\noverall_mean = np.mean(X, axis=0)\n# Within-class scatter matrix\nSw = np.zeros((n_features, n_features))\n# Between-class scatter matrix",
+        "peekOfCode": "iris = load_iris()\nX = iris.data\ny = iris.target\n# LDA\nlda = LinearDiscriminantAnalysis(n_components=2)\nX_lda = lda.fit_transform(X, y)\n# Plot\nplt.scatter(X_lda[:, 0], X_lda[:, 1], c=y)\nplt.xlabel(\"LD1\")\nplt.ylabel(\"LD2\")",
         "detail": "lda",
         "documentation": {}
     },
@@ -458,7 +701,7 @@
         "kind": 5,
         "importPath": "lda",
         "description": "lda",
-        "peekOfCode": "X = iris.data\ny = iris.target\n# Number of features\nn_features = X.shape[1]\n# Overall mean\noverall_mean = np.mean(X, axis=0)\n# Within-class scatter matrix\nSw = np.zeros((n_features, n_features))\n# Between-class scatter matrix\nSb = np.zeros((n_features, n_features))",
+        "peekOfCode": "X = iris.data\ny = iris.target\n# LDA\nlda = LinearDiscriminantAnalysis(n_components=2)\nX_lda = lda.fit_transform(X, y)\n# Plot\nplt.scatter(X_lda[:, 0], X_lda[:, 1], c=y)\nplt.xlabel(\"LD1\")\nplt.ylabel(\"LD2\")\nplt.title(\"LDA on Iris Dataset\")",
         "detail": "lda",
         "documentation": {}
     },
@@ -467,79 +710,16 @@
         "kind": 5,
         "importPath": "lda",
         "description": "lda",
-        "peekOfCode": "y = iris.target\n# Number of features\nn_features = X.shape[1]\n# Overall mean\noverall_mean = np.mean(X, axis=0)\n# Within-class scatter matrix\nSw = np.zeros((n_features, n_features))\n# Between-class scatter matrix\nSb = np.zeros((n_features, n_features))\nfor c in np.unique(y):",
+        "peekOfCode": "y = iris.target\n# LDA\nlda = LinearDiscriminantAnalysis(n_components=2)\nX_lda = lda.fit_transform(X, y)\n# Plot\nplt.scatter(X_lda[:, 0], X_lda[:, 1], c=y)\nplt.xlabel(\"LD1\")\nplt.ylabel(\"LD2\")\nplt.title(\"LDA on Iris Dataset\")\nplt.show()",
         "detail": "lda",
         "documentation": {}
     },
     {
-        "label": "n_features",
+        "label": "lda",
         "kind": 5,
         "importPath": "lda",
         "description": "lda",
-        "peekOfCode": "n_features = X.shape[1]\n# Overall mean\noverall_mean = np.mean(X, axis=0)\n# Within-class scatter matrix\nSw = np.zeros((n_features, n_features))\n# Between-class scatter matrix\nSb = np.zeros((n_features, n_features))\nfor c in np.unique(y):\n    Xc = X[y == c]\n    class_mean = np.mean(Xc, axis=0)",
-        "detail": "lda",
-        "documentation": {}
-    },
-    {
-        "label": "overall_mean",
-        "kind": 5,
-        "importPath": "lda",
-        "description": "lda",
-        "peekOfCode": "overall_mean = np.mean(X, axis=0)\n# Within-class scatter matrix\nSw = np.zeros((n_features, n_features))\n# Between-class scatter matrix\nSb = np.zeros((n_features, n_features))\nfor c in np.unique(y):\n    Xc = X[y == c]\n    class_mean = np.mean(Xc, axis=0)\n    # Compute Sw\n    for row in Xc:",
-        "detail": "lda",
-        "documentation": {}
-    },
-    {
-        "label": "Sw",
-        "kind": 5,
-        "importPath": "lda",
-        "description": "lda",
-        "peekOfCode": "Sw = np.zeros((n_features, n_features))\n# Between-class scatter matrix\nSb = np.zeros((n_features, n_features))\nfor c in np.unique(y):\n    Xc = X[y == c]\n    class_mean = np.mean(Xc, axis=0)\n    # Compute Sw\n    for row in Xc:\n        diff = (row - class_mean).reshape(-1, 1)\n        Sw += diff @ diff.T",
-        "detail": "lda",
-        "documentation": {}
-    },
-    {
-        "label": "Sb",
-        "kind": 5,
-        "importPath": "lda",
-        "description": "lda",
-        "peekOfCode": "Sb = np.zeros((n_features, n_features))\nfor c in np.unique(y):\n    Xc = X[y == c]\n    class_mean = np.mean(Xc, axis=0)\n    # Compute Sw\n    for row in Xc:\n        diff = (row - class_mean).reshape(-1, 1)\n        Sw += diff @ diff.T\n    # Compute Sb\n    diff = (class_mean - overall_mean).reshape(-1, 1)",
-        "detail": "lda",
-        "documentation": {}
-    },
-    {
-        "label": "idx",
-        "kind": 5,
-        "importPath": "lda",
-        "description": "lda",
-        "peekOfCode": "idx = np.argsort(eigen_values)[::-1]\neigen_values = eigen_values[idx]\neigen_vectors = eigen_vectors[:, idx]\n# Select first 2 Linear Discriminants\nW = eigen_vectors[:, :2]\n# Project data\nX_lda = X @ W\n# Plot\nplt.scatter(X_lda[:, 0], X_lda[:, 1], c=y)\nplt.xlabel(\"LD1\")",
-        "detail": "lda",
-        "documentation": {}
-    },
-    {
-        "label": "eigen_values",
-        "kind": 5,
-        "importPath": "lda",
-        "description": "lda",
-        "peekOfCode": "eigen_values = eigen_values[idx]\neigen_vectors = eigen_vectors[:, idx]\n# Select first 2 Linear Discriminants\nW = eigen_vectors[:, :2]\n# Project data\nX_lda = X @ W\n# Plot\nplt.scatter(X_lda[:, 0], X_lda[:, 1], c=y)\nplt.xlabel(\"LD1\")\nplt.ylabel(\"LD2\")",
-        "detail": "lda",
-        "documentation": {}
-    },
-    {
-        "label": "eigen_vectors",
-        "kind": 5,
-        "importPath": "lda",
-        "description": "lda",
-        "peekOfCode": "eigen_vectors = eigen_vectors[:, idx]\n# Select first 2 Linear Discriminants\nW = eigen_vectors[:, :2]\n# Project data\nX_lda = X @ W\n# Plot\nplt.scatter(X_lda[:, 0], X_lda[:, 1], c=y)\nplt.xlabel(\"LD1\")\nplt.ylabel(\"LD2\")\nplt.title(\"LDA Projection of Iris Dataset\")",
-        "detail": "lda",
-        "documentation": {}
-    },
-    {
-        "label": "W",
-        "kind": 5,
-        "importPath": "lda",
-        "description": "lda",
-        "peekOfCode": "W = eigen_vectors[:, :2]\n# Project data\nX_lda = X @ W\n# Plot\nplt.scatter(X_lda[:, 0], X_lda[:, 1], c=y)\nplt.xlabel(\"LD1\")\nplt.ylabel(\"LD2\")\nplt.title(\"LDA Projection of Iris Dataset\")\nplt.colorbar(label=\"Target Class\")\nplt.show()",
+        "peekOfCode": "lda = LinearDiscriminantAnalysis(n_components=2)\nX_lda = lda.fit_transform(X, y)\n# Plot\nplt.scatter(X_lda[:, 0], X_lda[:, 1], c=y)\nplt.xlabel(\"LD1\")\nplt.ylabel(\"LD2\")\nplt.title(\"LDA on Iris Dataset\")\nplt.show()",
         "detail": "lda",
         "documentation": {}
     },
@@ -548,7 +728,7 @@
         "kind": 5,
         "importPath": "lda",
         "description": "lda",
-        "peekOfCode": "X_lda = X @ W\n# Plot\nplt.scatter(X_lda[:, 0], X_lda[:, 1], c=y)\nplt.xlabel(\"LD1\")\nplt.ylabel(\"LD2\")\nplt.title(\"LDA Projection of Iris Dataset\")\nplt.colorbar(label=\"Target Class\")\nplt.show()\n\"\"\"\nload_iris().data → Loads the Iris dataset.",
+        "peekOfCode": "X_lda = lda.fit_transform(X, y)\n# Plot\nplt.scatter(X_lda[:, 0], X_lda[:, 1], c=y)\nplt.xlabel(\"LD1\")\nplt.ylabel(\"LD2\")\nplt.title(\"LDA on Iris Dataset\")\nplt.show()",
         "detail": "lda",
         "documentation": {}
     },
@@ -746,7 +926,7 @@
         "kind": 5,
         "importPath": "pca",
         "description": "pca",
-        "peekOfCode": "iris = load_iris()\nX = iris.data\ny = iris.target\n# Mean centering\nX = X - np.mean(X, axis=0)\n# Covariance matrix\ncov = np.cov(X.T)\n# Eigenvalues and Eigenvectors\neigen_values, eigen_vectors = np.linalg.eig(cov)\n# Sort eigenvalues in descending order",
+        "peekOfCode": "iris = load_iris()\nX = iris.data\ny = iris.target\n# PCA\npca = PCA(n_components=2)\nX_pca = pca.fit_transform(X)\n# Plot\nplt.scatter(X_pca[:, 0], X_pca[:, 1], c=y)\nplt.xlabel(\"PC1\")\nplt.ylabel(\"PC2\")",
         "detail": "pca",
         "documentation": {}
     },
@@ -755,7 +935,7 @@
         "kind": 5,
         "importPath": "pca",
         "description": "pca",
-        "peekOfCode": "X = iris.data\ny = iris.target\n# Mean centering\nX = X - np.mean(X, axis=0)\n# Covariance matrix\ncov = np.cov(X.T)\n# Eigenvalues and Eigenvectors\neigen_values, eigen_vectors = np.linalg.eig(cov)\n# Sort eigenvalues in descending order\nidx = np.argsort(eigen_values)[::-1]",
+        "peekOfCode": "X = iris.data\ny = iris.target\n# PCA\npca = PCA(n_components=2)\nX_pca = pca.fit_transform(X)\n# Plot\nplt.scatter(X_pca[:, 0], X_pca[:, 1], c=y)\nplt.xlabel(\"PC1\")\nplt.ylabel(\"PC2\")\nplt.title(\"PCA on Iris Dataset\")",
         "detail": "pca",
         "documentation": {}
     },
@@ -764,61 +944,16 @@
         "kind": 5,
         "importPath": "pca",
         "description": "pca",
-        "peekOfCode": "y = iris.target\n# Mean centering\nX = X - np.mean(X, axis=0)\n# Covariance matrix\ncov = np.cov(X.T)\n# Eigenvalues and Eigenvectors\neigen_values, eigen_vectors = np.linalg.eig(cov)\n# Sort eigenvalues in descending order\nidx = np.argsort(eigen_values)[::-1]\neigen_values = eigen_values[idx]",
+        "peekOfCode": "y = iris.target\n# PCA\npca = PCA(n_components=2)\nX_pca = pca.fit_transform(X)\n# Plot\nplt.scatter(X_pca[:, 0], X_pca[:, 1], c=y)\nplt.xlabel(\"PC1\")\nplt.ylabel(\"PC2\")\nplt.title(\"PCA on Iris Dataset\")\nplt.show()",
         "detail": "pca",
         "documentation": {}
     },
     {
-        "label": "X",
+        "label": "pca",
         "kind": 5,
         "importPath": "pca",
         "description": "pca",
-        "peekOfCode": "X = X - np.mean(X, axis=0)\n# Covariance matrix\ncov = np.cov(X.T)\n# Eigenvalues and Eigenvectors\neigen_values, eigen_vectors = np.linalg.eig(cov)\n# Sort eigenvalues in descending order\nidx = np.argsort(eigen_values)[::-1]\neigen_values = eigen_values[idx]\neigen_vectors = eigen_vectors[:, idx]\n# Select first 2 principal components",
-        "detail": "pca",
-        "documentation": {}
-    },
-    {
-        "label": "cov",
-        "kind": 5,
-        "importPath": "pca",
-        "description": "pca",
-        "peekOfCode": "cov = np.cov(X.T)\n# Eigenvalues and Eigenvectors\neigen_values, eigen_vectors = np.linalg.eig(cov)\n# Sort eigenvalues in descending order\nidx = np.argsort(eigen_values)[::-1]\neigen_values = eigen_values[idx]\neigen_vectors = eigen_vectors[:, idx]\n# Select first 2 principal components\ncomponents = eigen_vectors[:, :2]\n# Transform data",
-        "detail": "pca",
-        "documentation": {}
-    },
-    {
-        "label": "idx",
-        "kind": 5,
-        "importPath": "pca",
-        "description": "pca",
-        "peekOfCode": "idx = np.argsort(eigen_values)[::-1]\neigen_values = eigen_values[idx]\neigen_vectors = eigen_vectors[:, idx]\n# Select first 2 principal components\ncomponents = eigen_vectors[:, :2]\n# Transform data\nX_pca = X @ components\n# Scatter plot with 3 colors\nplt.scatter(X_pca[:, 0], X_pca[:, 1], c=y)\nplt.xlabel(\"PC1\")",
-        "detail": "pca",
-        "documentation": {}
-    },
-    {
-        "label": "eigen_values",
-        "kind": 5,
-        "importPath": "pca",
-        "description": "pca",
-        "peekOfCode": "eigen_values = eigen_values[idx]\neigen_vectors = eigen_vectors[:, idx]\n# Select first 2 principal components\ncomponents = eigen_vectors[:, :2]\n# Transform data\nX_pca = X @ components\n# Scatter plot with 3 colors\nplt.scatter(X_pca[:, 0], X_pca[:, 1], c=y)\nplt.xlabel(\"PC1\")\nplt.ylabel(\"PC2\")",
-        "detail": "pca",
-        "documentation": {}
-    },
-    {
-        "label": "eigen_vectors",
-        "kind": 5,
-        "importPath": "pca",
-        "description": "pca",
-        "peekOfCode": "eigen_vectors = eigen_vectors[:, idx]\n# Select first 2 principal components\ncomponents = eigen_vectors[:, :2]\n# Transform data\nX_pca = X @ components\n# Scatter plot with 3 colors\nplt.scatter(X_pca[:, 0], X_pca[:, 1], c=y)\nplt.xlabel(\"PC1\")\nplt.ylabel(\"PC2\")\nplt.title(\"PCA Projection of Iris Dataset\")",
-        "detail": "pca",
-        "documentation": {}
-    },
-    {
-        "label": "components",
-        "kind": 5,
-        "importPath": "pca",
-        "description": "pca",
-        "peekOfCode": "components = eigen_vectors[:, :2]\n# Transform data\nX_pca = X @ components\n# Scatter plot with 3 colors\nplt.scatter(X_pca[:, 0], X_pca[:, 1], c=y)\nplt.xlabel(\"PC1\")\nplt.ylabel(\"PC2\")\nplt.title(\"PCA Projection of Iris Dataset\")\nplt.colorbar(label=\"Target Class\")\nplt.show()",
+        "peekOfCode": "pca = PCA(n_components=2)\nX_pca = pca.fit_transform(X)\n# Plot\nplt.scatter(X_pca[:, 0], X_pca[:, 1], c=y)\nplt.xlabel(\"PC1\")\nplt.ylabel(\"PC2\")\nplt.title(\"PCA on Iris Dataset\")\nplt.show()",
         "detail": "pca",
         "documentation": {}
     },
@@ -827,7 +962,7 @@
         "kind": 5,
         "importPath": "pca",
         "description": "pca",
-        "peekOfCode": "X_pca = X @ components\n# Scatter plot with 3 colors\nplt.scatter(X_pca[:, 0], X_pca[:, 1], c=y)\nplt.xlabel(\"PC1\")\nplt.ylabel(\"PC2\")\nplt.title(\"PCA Projection of Iris Dataset\")\nplt.colorbar(label=\"Target Class\")\nplt.show()",
+        "peekOfCode": "X_pca = pca.fit_transform(X)\n# Plot\nplt.scatter(X_pca[:, 0], X_pca[:, 1], c=y)\nplt.xlabel(\"PC1\")\nplt.ylabel(\"PC2\")\nplt.title(\"PCA on Iris Dataset\")\nplt.show()",
         "detail": "pca",
         "documentation": {}
     },
@@ -883,6 +1018,42 @@
         "description": "perceptron",
         "peekOfCode": "b = -0.5\nprint(\"\\nOR Gate\")\nfor x in X:\n    print(x, \"->\", step(np.dot(x,w)+b))",
         "detail": "perceptron",
+        "documentation": {}
+    },
+    {
+        "label": "sigmoid",
+        "kind": 2,
+        "importPath": "perceptron2",
+        "description": "perceptron2",
+        "peekOfCode": "def sigmoid(x):\n    return 1/(1+np.exp(-x))\ndef train(X, y):\n    w = np.random.rand(2)\n    b = np.random.rand()\n    for _ in range(1000):\n        for i in range(len(X)):\n            out = sigmoid(np.dot(X[i], w) + b)\n            err = y[i] - out\n            w += 0.1 * err * X[i]",
+        "detail": "perceptron2",
+        "documentation": {}
+    },
+    {
+        "label": "train",
+        "kind": 2,
+        "importPath": "perceptron2",
+        "description": "perceptron2",
+        "peekOfCode": "def train(X, y):\n    w = np.random.rand(2)\n    b = np.random.rand()\n    for _ in range(1000):\n        for i in range(len(X)):\n            out = sigmoid(np.dot(X[i], w) + b)\n            err = y[i] - out\n            w += 0.1 * err * X[i]\n            b += 0.1 * err\n    return w, b",
+        "detail": "perceptron2",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "perceptron2",
+        "description": "perceptron2",
+        "peekOfCode": "X = np.array([[0,0],[0,1],[1,0],[1,1]])\n# AND and OR outputs\ny_and = np.array([0,0,0,1])\ny_or  = np.array([0,1,1,1])\n# Train\nw1, b1 = train(X, y_and)\nw2, b2 = train(X, y_or)\n# Predict\n#AND GATE \nprint(\"AND Gate\")",
+        "detail": "perceptron2",
+        "documentation": {}
+    },
+    {
+        "label": "y_and",
+        "kind": 5,
+        "importPath": "perceptron2",
+        "description": "perceptron2",
+        "peekOfCode": "y_and = np.array([0,0,0,1])\ny_or  = np.array([0,1,1,1])\n# Train\nw1, b1 = train(X, y_and)\nw2, b2 = train(X, y_or)\n# Predict\n#AND GATE \nprint(\"AND Gate\")\nfor x in X:\n    print(x, \"->\", round(sigmoid(np.dot(x, w1) + b1)))",
+        "detail": "perceptron2",
         "documentation": {}
     }
 ]

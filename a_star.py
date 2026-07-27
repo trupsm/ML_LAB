@@ -12,6 +12,7 @@ def a_star(graph, heuristic, start, goal):
         print(current, end=" ")
         if current == goal:
             print("\nGoal Reached")
+            print("cost: ",g)
             return
         visited.add(current)
         for neighbor, cost in graph[current]:
@@ -20,7 +21,6 @@ def a_star(graph, heuristic, start, goal):
                 f_new = g_new + heuristic[neighbor]
                 pq.put((f_new, g_new, neighbor))
 # -------- INPUT --------
-
 graph = {}
 heuristic = {}
 n = int(input("Enter number of nodes: "))
