@@ -8,6 +8,8 @@ y = iris.target
 # LDA
 lda = LinearDiscriminantAnalysis(n_components=2)
 X_lda = lda.fit_transform(X, y)
+print("Transformed data :")
+print(X_lda)
 # Plot
 plt.scatter(X_lda[:, 0], X_lda[:, 1], c=y)
 plt.xlabel("LD1")

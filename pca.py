@@ -8,6 +8,8 @@ y = iris.target
 # PCA
 pca = PCA(n_components=2)
 X_pca = pca.fit_transform(X)
+print("Transformed data :")
+print(X_pca)
 # Plot
 plt.scatter(X_pca[:, 0], X_pca[:, 1], c=y)
 plt.xlabel("PC1")
