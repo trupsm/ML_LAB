@@ -4,7 +4,7 @@ def sigmoid(x):
 def train(X, y):
     w = np.random.rand(2)
     b = np.random.rand()
-    for _ in range(1000):
+    for _ in range(100):
         for i in range(len(X)):
             out = sigmoid(np.dot(X[i], w) + b)
             err = y[i] - out
