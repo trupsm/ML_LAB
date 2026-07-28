@@ -1,36 +1,35 @@
 import numpy as np
+import pandas as pd
 import matplotlib.pyplot as plt
-from scipy.cluster.hierarchy import dendrogram, linkage
 from sklearn.datasets import load_iris
-# Load Iris Dataset
-iris = load_iris()
-# Take first 6 samples for simplicity
-data = iris.data[:6]
-# Function to calculate proximity matrix
+from sklearn.preprocessing import StandardScaler
+from scipy.cluster.hierarchy import linkage, dendrogram
 def proximity_matrix(data):
     n = len(data)
     matrix = np.zeros((n, n))
     for i in range(n):
         for j in range(i + 1, n):
-            # Euclidean Distance
             distance = np.linalg.norm(data[i] - data[j])
-            matrix[i][j] = distance
-            matrix[j][i] = distance
+            matrix[i][j] =matrix[j][i]=distance
     return matrix
-# Function to plot dendrogram
 def plot_dendrogram(data, method):
-    # Perform hierarchical clustering
-    linkage_matrix = linkage(data, method=method)
-    # Draw dendrogram
-    dendrogram(linkage_matrix)
+    plt.figure(figsize=(6, 4))
+    dendrogram(linkage(data, method=method))
     plt.title(f"{method} Linkage")
-    plt.xlabel("Data Points")
+    plt.xlabel("Samples")
     plt.ylabel("Distance")
     plt.show()
-# Display Proximity Matrix
+iris = load_iris()
+df = pd.DataFrame(iris.data, columns=iris.feature_names)
+# Preprocesing
+df = df.drop_duplicates()
+df = df.fillna(df.mean())
+scaler = StandardScaler()
+data = scaler.fit_transform(df)
+data = data[:6]
+
+matrix = proximity_matrix(data)
 print("Proximity Matrix:")
-print(proximity_matrix(data))
-# Single Linkage Dendrogram
+print(matrix)
 plot_dendrogram(data, "single")
-# Complete Linkage Dendrogram
 plot_dendrogram(data, "complete")
